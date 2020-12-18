@@ -3,6 +3,9 @@ import { Carousel } from 'react-bootstrap';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
+import adv1 from '../../images/Advocacia_1.jpeg';
+import adv2 from '../../images/Advocacia_2.jpeg';
+
 const homePage = (props) => {
     return(
         <>
@@ -14,7 +17,7 @@ const homePage = (props) => {
                     <Carousel.Item interval={1000}>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=First slide&bg=373940"
+                            src={adv1}
                             alt="First slide"
                         />
                     <Carousel.Caption>
@@ -27,7 +30,7 @@ const homePage = (props) => {
                     <Carousel.Item interval={500}>
                         <img
                             className="d-block w-100"
-                            src="holder.js/800x400?text=Second slide&bg=282c34"
+                            src={adv2}
                             alt="Third slide"
                     />
                     <Carousel.Caption>
